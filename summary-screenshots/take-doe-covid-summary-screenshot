@@ -1,0 +1,16 @@
+#!/bin/sh
+key="$1"
+dest_path="$2"
+url=https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map
+
+if [ -z "$key" ]; then
+  printf "Please pass your screenshotlayer API key as the first argument.\n"
+  exit 1
+fi
+
+if [ -z "$dest_path" ]; then
+  printf "Please pass your destination path as the second argument.\n"
+  exit 1
+fi
+date=$(date +%Y-%m-%d)
+wget --quiet --output-document "${dest_path}/${date}.png" "http://api.screenshotlayer.com/api/capture?access_key=$key&url=$url&viewport=1440x900&fullpage=1"
