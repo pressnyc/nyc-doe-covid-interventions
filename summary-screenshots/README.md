@@ -8,7 +8,7 @@ It depends on the [screenshotlayer](https://screenshotlayer.com), which
 provides a free API key that can take up to 100 screen shots per month.
 
 It is currently running and producing snapshot immages via Jamie's May First
-account with images available via: https://pressnyc.workingdirectory.net/imgs.
+account with images available via: https://pressnyc.workingdirectory.net/img.
 
 ## Setup
 
