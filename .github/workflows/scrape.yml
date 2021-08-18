@@ -12,12 +12,15 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
-    - name: Fetch latest data
+    - name: Fetch and format active interventions json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/activeinterventioncases | jq '.value' > activeinterventioncases.json
-    - name: Create CSV
+    - name: Create interventions CSV
       run: |-
         jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' activeinterventioncases.json > activeinterventioncases.csv
+    - name: Fetch and format summary json
+      run: |-
+        curl https://nycrtspublicportal.azurewebsites.net/data/summary | jq '.' > summary.json
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
