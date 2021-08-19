@@ -15,4 +15,4 @@ if [ -z "$dest_path" ]; then
   exit 1
 fi
 date=$(date +%Y-%m-%d)
-wget --quiet --output-document "${dest_path}/${date}.png" "http://api.screenshotlayer.com/api/capture?access_key=$key&url=$url&viewport=1440x900&fullpage=1"
+wget --quiet --output-document "${dest_path}/${date}.png" "http://api.screenshotlayer.com/api/capture?access_key=$key&url=$url&viewport=1440x900&fullpage=1&force=1"
