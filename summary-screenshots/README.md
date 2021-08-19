@@ -16,13 +16,15 @@ It can be setup anywhere via a cron job or timer, provided you have obtained an
 API key from [screenshotlayer](https://screenshotlayer.com).
 
 ```
-/path/to/take-doe-covid-summary-screenshot $api_key $img_page
+export SCREENSHOT_API_KEY=$api_key
+/path/to/take-doe-covid-summary-screenshot $img_page
 ```
 
 For example:
 
 ```
-/path/to/take-doe-covid-summary-screenshot xyz123 /var/www/foo/img 
+export SCREENSHOT_API_KEY=xyz123
+/path/to/take-doe-covid-summary-screenshot /var/www/foo/img 
 ```
 
 Each screen shot will be automatically named after the date it was taken (e.g.
