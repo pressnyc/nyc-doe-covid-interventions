@@ -6,7 +6,7 @@ from git import Repo
 
 repo = Repo('../nyc-doe-covid-interventions')
 
-commit_history = list(repo.iter_commits('origin'))
+commit_history = list(repo.iter_commits())
 
 path = "summary.json"
 
