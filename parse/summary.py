@@ -4,7 +4,7 @@ import json
 import csv
 from git import Repo
 
-repo = Repo('../nyc-doe-covid-interventions')
+repo = Repo('.')
 
 
 path = "summary.json"
@@ -15,10 +15,15 @@ path = "summary.json"
 #   for commit in repo.iter_commits('--all', paths=path)
 # )
 
+
+
 revlist = []
 
 for commit in list(repo.iter_commits(paths=path)):
+  print(commit)
   revlist.append( (commit.tree / path).data_stream.read() )
+
+
 
 confirmed = []
 cumulative = []
@@ -29,6 +34,7 @@ for filecontents in revlist:
   confirmed.append(j[0])
   cumulative.append(j[1])
   actions.append(j[2])
+
 
 
 
@@ -58,6 +64,7 @@ def make_csv(data, output_filename):
 
 make_csv(cumulative, 'csv/confirmed-cases-cumulative.csv')
 make_csv(confirmed, 'csv/confirmed-cases-daily.csv')
+
 
 
 
