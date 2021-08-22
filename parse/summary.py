@@ -9,11 +9,9 @@ repo = Repo('../nyc-doe-covid-interventions')
 
 path = "summary.json"
 
-print(list(repo.iter_commits('main', paths=path)))
-
 revlist = (
   (commit, (commit.tree / path).data_stream.read())
-  for commit in repo.iter_commits('main', paths=path)
+  for commit in repo.iter_commits('--all', paths=path)
 )
 
 
