@@ -51,8 +51,8 @@ def make_csv(data, output_filename):
         csv_writer.writerow(o.values()) 
     data_file.close()
 
-make_csv(cumulative, '../csv/confirmed-cases-cumulative.csv')
-make_csv(confirmed, '../csv/confirmed-cases-daily.csv')
+make_csv(cumulative, 'csv/confirmed-cases-cumulative.csv')
+make_csv(confirmed, 'csv/confirmed-cases-daily.csv')
 
 
 
@@ -86,6 +86,6 @@ def make_actions_csv(data, output_filename):
         csv_writer.writerow(o.values()) 
     data_file.close()
 
-make_actions_csv(actions, '../csv/actions.csv')
+make_actions_csv(actions, 'csv/actions.csv')
 
 
