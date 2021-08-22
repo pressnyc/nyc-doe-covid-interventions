@@ -16,4 +16,4 @@ Updated nightly.
 
 ## Summary Screenshots
 
-Screenshots of the [Daily COVID Case Map](https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map) are archived at https://pressnyc.workingdirectory.net/img/
+Screenshots of the DOE’s [Daily COVID Case Map](https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map) are archived at https://pressnyc.workingdirectory.net/img/
