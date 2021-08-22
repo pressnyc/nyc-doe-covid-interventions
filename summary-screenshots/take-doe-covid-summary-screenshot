@@ -3,7 +3,8 @@
 # Set key via environment variable.
 key="$SCREENSHOT_API_KEY"
 dest_path="$1"
-url=https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map
+case_url=https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map
+test_url=https://testingresults.schools.nyc/surveytesting/summary
 
 if [ -z "$key" ]; then
   printf "Please pass your screenshotlayer API key as the first argument.\n"
@@ -15,4 +16,8 @@ if [ -z "$dest_path" ]; then
   exit 1
 fi
 date=$(date +%Y-%m-%d)
-wget --quiet --output-document "${dest_path}/${date}.png" "http://api.screenshotlayer.com/api/capture?access_key=$key&url=$url&viewport=1440x900&fullpage=1&force=1"
+
+# Cases.
+wget --quiet --output-document "${dest_path}/case-${date}.png" "http://api.screenshotlayer.com/api/capture?access_key=$key&url=$case_url&viewport=1440x900&fullpage=1&force=1"
+# Tests
+wget --quiet --output-document "${dest_path}/test-${date}.png" "http://api.screenshotlayer.com/api/capture?access_key=$key&url=$test_url&viewport=1440x900&fullpage=1&force=1"
