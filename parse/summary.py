@@ -9,17 +9,22 @@ repo = Repo('../nyc-doe-covid-interventions')
 
 path = "summary.json"
 
-revlist = (
-  (commit, (commit.tree / path).data_stream.read())
-  for commit in repo.iter_commits('--all', paths=path)
-)
 
+# revlist = (
+#   (commit, (commit.tree / path).data_stream.read())
+#   for commit in repo.iter_commits('--all', paths=path)
+# )
+
+revlist = []
+
+for commit in list(repo.iter_commits(paths=path)):
+  revlist.append( (commit.tree / path).data_stream.read() )
 
 confirmed = []
 cumulative = []
 actions = []
 
-for commit, filecontents in revlist:
+for filecontents in revlist:
   j = json.loads(filecontents)
   confirmed.append(j[0])
   cumulative.append(j[1])
