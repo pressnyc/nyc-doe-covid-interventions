@@ -17,7 +17,7 @@ jobs:
         curl https://nycrtspublicportal.azurewebsites.net/data/activeinterventioncases | jq '.value' > activeinterventioncases.json
     - name: Create interventions CSV
       run: |-
-        jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' activeinterventioncases.json > activeinterventioncases.csv
+        jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' activeinterventioncases.json > csv/activeinterventioncases.csv
     - name: Fetch and format summary json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/summary | jq '.' > summary.json
@@ -27,6 +27,16 @@ jobs:
     - name: Fetch and format summary json
       run: |-
         curl https://testingresults.schools.nyc/surveytesting/summary > testingresults-summary.html
+    - name: setup python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.7.7'        
+    - name: install python packages
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r parse/requirements.txt        
+    - name: execute py script
+      run: python parse/summary.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
