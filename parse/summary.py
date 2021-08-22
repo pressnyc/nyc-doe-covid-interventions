@@ -10,10 +10,11 @@ repo = Repo('.')
 path = "summary.json"
 
 
-revlist = (
-  (commit, (commit.tree / path).data_stream.read())
-  for commit in repo.iter_commits('main', paths=path)
-)
+
+revlist = []
+
+for commit in list(repo.iter_commits('main', paths=path)):
+  revlist.append( (commit.tree / path).data_stream.read() )
 
 
 confirmed = []
