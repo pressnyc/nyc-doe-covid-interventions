@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/css/healthtracker.css?v=2.2" /> 
+<title>NYC Schools Covid Testing Summary</title>
+
+<style>
+
+    h2 {
+        font-size: 1.875rem;
+    }
+
+    .schools-nyc ul {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 1200px) {
+        .k-grid .k-header,
+        .k-grid td {
+            display: table-cell;
+        }
+
+        .k-grid tr {
+            display: table-row;
+        }
+
+        .responsive .k-grid {
+            overflow: auto;
+        }
+    }
+</style>
+
+</style>
+
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/kendo/kendo.custom.min.js"></script>
+
+<div class="schools-nyc">
+     
+<div id="ComulativeCityWide" class="main-wrap container">
+    <h2>Cumulative Summer Rising Testing Summary Citywide </h2>
+    <ul>
+        <li>Date Range: 7/6/2021 through 8/19/2021 </li>
+    </ul>
+
+    <div class="table-responsive" id="Comulative" name="Comulative"></div><script>kendo.syncReady(function(){jQuery("#Comulative").kendoGrid({"autoBind":true,"columns":[{"title":"Citywide","field":"Citywide","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Total","field":"Total","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Students","field":"Students","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Staff","field":"Staff","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true}],"scrollable":false,"dataSource":{"type":(function(){if(kendo.data.transports['aspnetmvc-ajax']){return 'aspnetmvc-ajax';} else{throw new Error('The kendo.aspnetmvc.min.js script is not included.');}})(),"transport":{"read":{"url":""},"prefix":""},"schema":{"data":"Data","total":"Total","errors":"Errors","model":{"fields":{"Citywide":{"type":"string"},"Total":{"type":"string"},"Students":{"type":"string"},"Staff":{"type":"string"}}}},"data":{"Data":[{"Citywide":"Schools Visited","Total":"4351","Students":"NA","Staff":"NA"},{"Citywide":"Tests Conducted","Total":"49327","Students":"34059","Staff":"15268"},{"Citywide":"Total positive tests identified","Total":"144","Students":"97","Staff":"47"},{"Citywide":"Citywide Survey Testing Positivity Rate","Total":"0.30%","Students":null,"Staff":null},{"Citywide":"Citywide Survey Testing Positivity Rate (7-Day Rolling Average)","Total":"0.74%","Students":null,"Staff":null}],"Total":5}}});});</script>
+</div>
+
+<div id="BoroughSummaryCityWide" class="main-wrap pt-4 container">
+    <h2>Cumulative Summer Rising Testing Summary by Borough </h2>
+
+    <ul>
+        <li>Date Range: 7/6/2021 through 8/19/2021 </li>
+        <li>Note: testing data includes both students and school-based staff</li>
+    </ul>
+
+    <div class="table-responsive" id="BoroughSummary" name="BoroughSummary"></div><script>kendo.syncReady(function(){jQuery("#BoroughSummary").kendoGrid({"autoBind":true,"columns":[{"title":"Borough","field":"Borough","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Total Tests Conducted","field":"NumberOfTestCollected","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Total Positives Identified","field":"NumberOfPositives","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Number of tests processed","field":"NumberOfTestProccessed","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Positivity Rate","field":"PositivityRate","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true}],"scrollable":false,"dataSource":{"type":(function(){if(kendo.data.transports['aspnetmvc-ajax']){return 'aspnetmvc-ajax';} else{throw new Error('The kendo.aspnetmvc.min.js script is not included.');}})(),"transport":{"read":{"url":""},"prefix":""},"schema":{"data":"Data","total":"Total","errors":"Errors","model":{"fields":{"Borough":{"type":"string"},"NumberOfTestCollected":{"type":"string"},"NumberOfPositives":{"type":"string"},"NumberOfTestProccessed":{"type":"string"},"PositivityRate":{"type":"string"}}}},"data":{"Data":[{"Borough":"Bronx","NumberOfTestCollected":"10989","NumberOfPositives":"23","NumberOfTestProccessed":"10160","PositivityRate":"0.22%"},{"Borough":"Brooklyn","NumberOfTestCollected":"15079","NumberOfPositives":"55","NumberOfTestProccessed":"14766","PositivityRate":"0.37%"},{"Borough":"CityWide","NumberOfTestCollected":"49327","NumberOfPositives":"144","NumberOfTestProccessed":"47138","PositivityRate":"0.30%"},{"Borough":"Manhattan","NumberOfTestCollected":"6459","NumberOfPositives":"18","NumberOfTestProccessed":"6077","PositivityRate":"0.30%"},{"Borough":"Missing Data","NumberOfTestCollected":"7","NumberOfPositives":"0","NumberOfTestProccessed":"3","PositivityRate":"0.00%"},{"Borough":"Queens","NumberOfTestCollected":"13648","NumberOfPositives":"32","NumberOfTestProccessed":"13090","PositivityRate":"0.24%"},{"Borough":"Staten Island","NumberOfTestCollected":"3145","NumberOfPositives":"16","NumberOfTestProccessed":"3042","PositivityRate":"0.53%"}],"Total":7}}});});</script>
+</div>
+
+
+<div id="ComulativeDailyCityWide" class="main-wrap pt-4 container">
+    <h2>Daily Summer Rising Testing Summary Citywide</h2>
+    
+    <ul>
+        <li> This is a snapshot of the testing results from a 24 hour period from all schools.</li>
+        <li>Table shows 8/19/2021 results</li>
+    </ul>
+    
+    <div class="table-responsive" id="ComulativeDaily" name="ComulativeDaily"></div><script>kendo.syncReady(function(){jQuery("#ComulativeDaily").kendoGrid({"autoBind":true,"columns":[{"title":"Citywide","field":"Citywide","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Total","field":"Total","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Students","field":"Students","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Staff","field":"Staff","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true}],"scrollable":false,"dataSource":{"type":(function(){if(kendo.data.transports['aspnetmvc-ajax']){return 'aspnetmvc-ajax';} else{throw new Error('The kendo.aspnetmvc.min.js script is not included.');}})(),"transport":{"read":{"url":""},"prefix":""},"schema":{"data":"Data","total":"Total","errors":"Errors","model":{"fields":{"Citywide":{"type":"string"},"Total":{"type":"string"},"Students":{"type":"string"},"Staff":{"type":"string"}}}},"data":{"Data":[{"Citywide":"Schools Visited","Total":"84","Students":"NA","Staff":"NA"},{"Citywide":"Tests Conducted","Total":"1231","Students":"987","Staff":"244"},{"Citywide":"Total positive tests identified","Total":"12","Students":"10","Staff":"2"}],"Total":3}}});});</script>
+</div>
+
+
+</div>
+
+<script>
+
+    $( document ).ready(function() {
+        $(".schools-nyc .container").removeClass("container");
+        $(".schools-nyc .pt-4").removeClass("pt-4").addClass("pt-5");
+    });
+
+</script>
