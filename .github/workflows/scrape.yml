@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
+      width:
+        fetch-depth: 0
     - name: Fetch and format active interventions json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/activeinterventioncases | jq '.value' > activeinterventioncases.json
