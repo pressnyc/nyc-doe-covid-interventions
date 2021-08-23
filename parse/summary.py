@@ -74,7 +74,7 @@ def make_actions_csv(data, output_filename):
         'School Investigations, Cumulative': c['rows'][1][2],
         'School Investigations, Currently in effect': c['rows'][1][3],
         'School Closures, on Date': c['rows'][2][1],
-        'School Closures, Cumulative': c['rows'][2][3],
+        'School Closures, Cumulative': c['rows'][2][2],
         'School Closures, Currently in effect': c['rows'][2][3],
       }
       output_array.append(output)
