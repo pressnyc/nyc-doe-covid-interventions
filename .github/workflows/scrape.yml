@@ -4,7 +4,7 @@ on:
   push:
   workflow_dispatch:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron:  '0 0/6 * * *'
 
 jobs:
   scheduled:
@@ -23,9 +23,6 @@ jobs:
     - name: Fetch and format summary json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/summary | jq '.' > summary.json
-#    - name: Fetch and format testing json
-#      run: |-
-#        curl -d 1=1 https://testingresults.schools.nyc/surveytesting/get | jq '.' > test-summary.json
     - name: Fetch and format summary json
       run: |-
         curl https://testingresults.schools.nyc/surveytesting/summary > testingresults-summary.html
