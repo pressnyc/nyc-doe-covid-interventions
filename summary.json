@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: August 26, 2021 as of 6 PM",
+    "title": "Confirmed Positive COVID Cases: August 27, 2021 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "14",
         "9",
+        "4",
         "5"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 14, 2020 - August 26, 2021 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 14, 2020 - August 27, 2021 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "27,579",
-        "14,897",
-        "12,682"
+        "27,588",
+        "14,901",
+        "12,687"
       ]
     ]
   },
@@ -33,16 +33,16 @@
     "title": "Actions Taken",
     "header": [
       "Action",
-      "8/26<br/>as of 6 PM",
+      "8/27<br/>as of 6 PM",
       "Cumulative<br/>(since 9/14)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "10",
-        "19,133",
-        "164"
+        "9",
+        "19,142",
+        "128"
       ],
       [
         "School Investigations",
