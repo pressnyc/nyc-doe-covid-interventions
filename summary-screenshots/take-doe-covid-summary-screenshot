@@ -3,7 +3,7 @@
 # Set key via environment variable.
 key="$SCREENSHOT_API_KEY"
 dest_path="$1"
-case_url=https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map
+case_url=https://www.schools.nyc.gov/school-life/health-and-wellness/covid-information/daily-covid-case-map
 test_url=https://testingresults.schools.nyc/surveytesting/summary
 
 if [ -z "$key" ]; then
