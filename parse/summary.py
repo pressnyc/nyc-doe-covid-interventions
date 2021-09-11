@@ -1,6 +1,7 @@
 #/usr/bin/python3
 
 import json
+import datetime
 import csv
 from git import Repo
 
@@ -12,8 +13,11 @@ path = "summary.json"
 
 
 revlist = []
+years = []
 
 for commit in list(repo.iter_commits('main', paths=path)):
+  dt = datetime.datetime.fromtimestamp(commit.committed_date)
+  years.append(dt.year)
   revlist.append( (commit.tree / path).data_stream.read() )
 
 
@@ -65,8 +69,11 @@ def make_actions_csv(data, output_filename):
     output_array = []
 
     for c in data:
+      header = c['header'][1].replace('<br/>',' ').replace(' as of 6 PM','')
+      header = header + '/' + str( years[data.index(c)] )
+
       output = {
-        'Date': c['header'][1].replace('<br/>',' '),
+        'Date': header,
         'Classroom Closures, on Date': c['rows'][0][1],
         'Classroom Closures, Cumulative': c['rows'][0][2],
         'Classroom Closures, Currently in effect': c['rows'][0][3],
