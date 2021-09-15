@@ -26,13 +26,17 @@ for commit in list(repo.iter_commits('main', paths=path)):
 confirmed = []
 cumulative = []
 actions = []
+charter = []
 
 for filecontents in revlist:
   j = json.loads(filecontents)
   confirmed.append(j[0])
   cumulative.append(j[1])
   actions.append(j[2])
-
+  try:
+    charter.append(j[3])
+  except:
+    pass
 
 
 
@@ -95,5 +99,6 @@ def make_actions_csv(data, output_filename):
     df.to_csv(output_filename, index = None, encoding='utf-8')
 
 make_actions_csv(actions, 'csv/actions.csv')
+make_actions_csv(charter, 'csv/actions-charter.csv')
 
 
