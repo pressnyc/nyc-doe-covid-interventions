@@ -5,6 +5,8 @@ import datetime
 import csv
 from git import Repo
 
+import pandas as pd
+
 repo = Repo('.')
 
 
@@ -69,33 +71,28 @@ def make_actions_csv(data, output_filename):
     output_array = []
 
     for c in data:
-      header = c['header'][1].replace('<br/>',' ').replace(' as of 6 PM','')
-      header = header + '/' + str( years[data.index(c)] )
+      output = {}
 
-      output = {
-        'Date': header,
-        'Classroom Closures, on Date': c['rows'][0][1],
-        'Classroom Closures, Cumulative': c['rows'][0][2],
-        'Classroom Closures, Currently in effect': c['rows'][0][3],
-        'School Investigations, on Date': c['rows'][1][1],
-        'School Investigations, Cumulative': c['rows'][1][2],
-        'School Investigations, Currently in effect': c['rows'][1][3],
-        'School Closures, on Date': c['rows'][2][1],
-        'School Closures, Cumulative': c['rows'][2][2],
-        'School Closures, Currently in effect': c['rows'][2][3],
-      }
+      for row in c['rows']:
+        for i in range(len(row)):
+        
+          date = c['header'][1].replace('<br/>',' ').replace(' as of 6 PM','')
+          date = date + '/' + str( years[data.index(c)] )
+
+          if i == 0:          
+            output['Date'] = date
+          elif i == 1:          
+            output[ row[0] ] = row[i] 
+          else:
+            header = c['header'][i].replace('<br/>',' ')
+            header = header.replace('(since 9/14)','(since 9/14/2020)')
+            header = header.replace('(since 9/13)','(since 9/13/2021)')
+            output[ row[0] + ', ' + header ] = row[i] 
+            
       output_array.append(output)
 
-    data_file = open(output_filename, 'w')
-    csv_writer = csv.writer(data_file)
-    count = 0
-    for o in output_array:
-        if count == 0: 
-            header = o.keys()
-            csv_writer.writerow(header)
-            count += 1
-        csv_writer.writerow(o.values()) 
-    data_file.close()
+    df = pd.DataFrame(output_array)
+    df.to_csv(output_filename, index = None, encoding='utf-8')
 
 make_actions_csv(actions, 'csv/actions.csv')
 
