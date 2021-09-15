@@ -1,6 +1,6 @@
 # New York City Department of Education COVID-19 Interventions
 
-An archive of NYC DOE COVID-19 case numbers, testing results, and classroom interventions drawn from the DOE’s [Daily COVID Case Map](https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map) and [School Based Testing Report](https://testingresults.schools.nyc)
+An archive of NYC DOE COVID-19 case numbers, testing results, and classroom interventions drawn from the DOE’s [Daily COVID Case Map](https://www.schools.nyc.gov/school-life/health-and-wellness/covid-information/daily-covid-case-map) and [School Based Testing Report](https://testingresults.schools.nyc)
 
 Updated nightly.
 
@@ -16,4 +16,4 @@ Updated nightly.
 
 ## Summary Screenshots
 
-Screenshots of the DOE’s [Daily COVID Case Map](https://www.schools.nyc.gov/school-year/school-year-2020-21/return-to-school-2020/health-and-safety/daily-covid-case-map) and [Testing Report](https://testingresults.schools.nyc) are archived at https://pressnyc.workingdirectory.net/img/
+Screenshots of the DOE’s [Daily COVID Case Map](https://www.schools.nyc.gov/school-life/health-and-wellness/covid-information/daily-covid-case-map) and [Testing Report](https://testingresults.schools.nyc) are archived at https://pressnyc.workingdirectory.net/img/
