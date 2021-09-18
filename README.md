@@ -12,6 +12,7 @@ Updated nightly.
 * [Daily and cumulative actions in response COVID cases in DOE and DECE schools](https://raw.githubusercontent.com/pressnyc/nyc-doe-covid-interventions/main/csv/actions.csv)
 * [Daily and cumulative actions in response COVID cases in NYC charter schools](https://raw.githubusercontent.com/pressnyc/nyc-doe-covid-interventions/main/csv/actions-charter.csv)
 * [All current classroom interventions](https://raw.githubusercontent.com/pressnyc/nyc-doe-covid-interventions/main/csv/activeinterventioncases.csv)
+* [Testing results detail](https://raw.githubusercontent.com/pressnyc/nyc-doe-covid-interventions/main/csv/testing-results-detail.csv)
 
 ---
 
