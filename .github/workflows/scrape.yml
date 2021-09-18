@@ -34,9 +34,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r parse/requirements.txt        
-    - name: execute py script
+    - name: execute parse/summary.py
       run: python parse/summary.py
-    - name: execute py script
+    - name: execute parse/testingresults.py
       run: python parse/testingresults.py
     - name: Commit and push if it changed
       run: |-
