@@ -36,6 +36,8 @@ jobs:
         pip install -r parse/requirements.txt        
     - name: execute py script
       run: python parse/summary.py
+    - name: execute py script
+      run: python parse/testingresults.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
