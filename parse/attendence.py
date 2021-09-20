@@ -17,7 +17,13 @@ async def page_to_csv(page_content):
         
         
 async def hmm():
-    browser = await launch()
+    browser = await launch({ 'headless': True,  'args': [
+        '--no-sandbox',
+        '--single-process',
+        '--disable-dev-shm-usage',
+        '--disable-gpu',
+        '--no-zygote'
+    ] })
     page = await browser.newPage()
     await page.goto('https://www.nycenet.edu/PublicApps/Attendance.aspx')
     await asyncio.sleep(.2)  
