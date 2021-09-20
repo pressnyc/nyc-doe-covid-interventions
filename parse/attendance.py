@@ -7,7 +7,7 @@ from pyppeteer import launch
 
 async def page_to_csv(page_content):
     soup = BeautifulSoup(page_content, 'lxml')
-    table = soup.select_one("#ContentPlaceHolder1_gvAttendance")
+    table = soup.select_one("table")
     headers = [th.text for th in table.select("tr th")]
     with open("./csv/attendence.csv", "w") as f:
         wr = csv.writer(f)
@@ -26,9 +26,9 @@ async def hmm():
     ] })
     page = await browser.newPage()
     await page.goto('https://www.nycenet.edu/PublicApps/Attendance.aspx')
-    await asyncio.sleep(.2)  
+    await asyncio.sleep(.3)  
     await page.select('#ContentPlaceHolder1_gvAttendance_ddlPageSize', 'ALL')
-    await asyncio.sleep(.2)  
+    await asyncio.sleep(.3)  
     page_content = await page.content()
     await page_to_csv(page_content)    
     await browser.close()
