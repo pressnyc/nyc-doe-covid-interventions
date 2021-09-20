@@ -10,7 +10,7 @@ async def page_to_csv(page_content):
       soup = BeautifulSoup(page_content, 'lxml')
       table = soup.select_one("table")
       headers = [th.text for th in table.select("tr th")]
-      with open("./csv/daily-attendance.csv", "w") as f:
+      with open("./csv/attendance-daily.csv", "w") as f:
           wr = csv.writer(f)
           wr.writerow(headers)
           wr.writerows([[td.text for td in row.find_all("td")] for row in table.select("tr + tr")])    
