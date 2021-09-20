@@ -31,6 +31,7 @@ async def hmm():
     await asyncio.sleep(.3)  
     page_content = await page.content()
     await page_to_csv(page_content)    
+    await asyncio.sleep(.3)  
     await browser.close()
     return
 
