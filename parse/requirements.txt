@@ -2,3 +2,4 @@ GitPython==3.1.20
 pandas==0.25.1
 requests==2.26.0
 pyppeteer==0.2.6
+beautifulsoup4==4.9.3
