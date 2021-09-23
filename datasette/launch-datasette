@@ -1,5 +1,5 @@
 #!/bin/sh
 
 # Launch datasette
-datasette datasette-dbs/doe-covid-data.db --setting base_url /doe-covid-data/ -p 8009 --metadata datasette-dbs/metadata.json
+datasette datasette-dbs/doe-covid-data.db --setting base_url /d/ -p 8009 --metadata datasette-dbs/metadata.json
 
