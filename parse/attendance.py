@@ -30,13 +30,21 @@ async def hmm():
         '--no-zygote'
     ] })
     page = await browser.newPage()
+    print('await page.goto')
     await page.goto('https://www.nycenet.edu/PublicApps/Attendance.aspx')
-    await page.waitForNavigation()
     await asyncio.sleep(.5)  
+
+    print('await page.content')
+    await page.content()
+
+    print('await page.select')
     await page.select('#ContentPlaceHolder1_gvAttendance_ddlPageSize', 'ALL')
-    await page.waitForNavigation()
     await asyncio.sleep(1)  
+
+    print('await page.content')
     page_content = await page.content()
+
+    print('await page_to_csv')
     await page_to_csv(page_content)    
     await asyncio.sleep(1)  
     await browser.close()
