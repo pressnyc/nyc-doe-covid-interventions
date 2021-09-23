@@ -1,5 +1,8 @@
 {
     "title": "NYC DOE Covid data",
+    "description": "Data from the NYC DOE scraped and archived by Press NYC",
+    "source": "NYC Department of Education",
+    "source_url": "https://www.schools.nyc.gov/school-life/health-and-wellness/covid-information/daily-covid-case-map",
     "databases": {
         "doe-covid-data": {
             "tables": {
