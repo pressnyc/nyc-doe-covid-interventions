@@ -1,0 +1,12 @@
+{
+    "title": "NYC DOE Covid data",
+    "databases": {
+        "doe-covid-data": {
+            "tables": {
+                "activeInterventions": {
+                    "facets": ["interventionDateFormatted", "boroughFormatted", "buildingName"]
+                }
+            }
+        }
+    }
+}
