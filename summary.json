@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: September 24, 2021 as of 6 PM",
+    "title": "Confirmed Positive COVID Cases: September 23, 2021 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "0",
-        "0",
-        "0"
+        "210",
+        "154",
+        "56"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - September 24, 2021 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - September 23, 2021 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -33,26 +33,26 @@
     "title": "Actions Taken - DOE and DECE Schools",
     "header": [
       "Action",
-      "9/24<br/>as of 6 PM",
+      "9/23<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "0",
+        "79",
         "789",
         "656"
       ],
       [
         "Partial Classroom Closure",
-        "0",
+        "89",
         "663",
         "541"
       ],
       [
         "Non-Classroom Quarantine",
-        "0",
+        "9",
         "98",
         "79"
       ],
@@ -74,26 +74,26 @@
     "title": "Actions Taken - Charter Schools",
     "header": [
       "Action",
-      "9/24<br/>as of 6 PM",
+      "9/23<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "0",
+        "7",
         "123",
         "79"
       ],
       [
         "Partial Classroom Closure",
-        "0",
+        "4",
         "75",
         "48"
       ],
       [
         "Non-Classroom Quarantine",
-        "0",
+        "1",
         "11",
         "9"
       ],
