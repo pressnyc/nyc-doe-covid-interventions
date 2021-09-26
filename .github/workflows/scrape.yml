@@ -34,12 +34,15 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r parse/requirements.txt        
+        pip install -r charts/requirements.txt        
     - name: execute parse/summary.py
       run: python parse/summary.py
     - name: execute parse/testingresults.py
       run: python parse/testingresults.py
     - name: execute parse/attendance.py
       run: python parse/attendance.py
+    - name: execute charts/generate-cases-by-week.py
+      run: python charts/generate-cases-by-week.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
