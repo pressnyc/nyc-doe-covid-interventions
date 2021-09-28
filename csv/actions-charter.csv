@@ -1,14 +1,15 @@
-Date,Classroom Closures,"Classroom Closures, Cumulative (since 9/13/2021)","Classroom Closures, Currently in effect",Partial Classroom Closure,"Partial Classroom Closure, Cumulative (since 9/13/2021)","Partial Classroom Closure, Currently in effect",Non-Classroom Quarantine,"Non-Classroom Quarantine, Cumulative (since 9/13/2021)","Non-Classroom Quarantine, Currently in effect",School Investigations,"School Investigations, Cumulative (since 9/13/2021)","School Investigations, Currently in effect",School Closures,"School Closures, Cumulative (since 9/13/2021)","School Closures, Currently in effect"
-9/27/2021,8,143,38,15,95,31,2,13,4,0,1,0,0,0,0
-9/26/2021,8,135,56,0,80,39,0,11,5,0,1,0,0,0,0
-9/24/2021,4,127,73,5,80,48,0,11,9,0,1,0,0,0,0
-9/23/2021,7,123,79,4,75,48,1,11,9,0,1,0,0,0,0
-9/24/2021,0,123,79,0,75,48,0,11,9,0,1,0,0,0,0
-9/22/2021,16,116,82,9,71,50,0,10,8,0,1,0,0,0,0
-9/21/2021,15,100,66,13,62,41,1,10,8,1,1,1,0,0,0
-9/20/2021,13,85,51,9,49,28,3,9,7,0,0,0,0,0,0
-9/19/2021,6,73,65,2,40,38,1,6,5,0,0,0,0,0,0
-9/17/2021,17,67,72,6,38,42,3,5,5,0,0,0,0,0,0
-9/16/2021,11,50,69,6,32,40,0,2,2,0,0,0,0,0,0
-9/15/2021,11,39,58,6,26,34,0,2,2,0,0,0,0,0,0
-9/14/2021,12,28,47,7,20,28,1,2,2,0,0,0,0,0,0
+Date,Classroom Closures,"Classroom Closures, Cumulative (since 9/13/2021)","Classroom Closures, Currently in effect",Partial Classroom Quarantine,"Partial Classroom Quarantine, Cumulative (since 9/13/2021)","Partial Classroom Quarantine, Currently in effect",Non-Classroom Quarantine,"Non-Classroom Quarantine, Cumulative (since 9/13/2021)","Non-Classroom Quarantine, Currently in effect",School Investigations,"School Investigations, Cumulative (since 9/13/2021)","School Investigations, Currently in effect",School Closures,"School Closures, Cumulative (since 9/13/2021)","School Closures, Currently in effect",Partial Classroom Closure,"Partial Classroom Closure, Cumulative (since 9/13/2021)","Partial Classroom Closure, Currently in effect"
+9/27/2021,8,143,38,15,95,31,2,13,4,0,1,0,0,0,0,,,
+9/27/2021,8,143,38,,,,2,13,4,0,1,0,0,0,0,15,95,31
+9/26/2021,8,135,56,,,,0,11,5,0,1,0,0,0,0,0,80,39
+9/24/2021,4,127,73,,,,0,11,9,0,1,0,0,0,0,5,80,48
+9/23/2021,7,123,79,,,,1,11,9,0,1,0,0,0,0,4,75,48
+9/24/2021,0,123,79,,,,0,11,9,0,1,0,0,0,0,0,75,48
+9/22/2021,16,116,82,,,,0,10,8,0,1,0,0,0,0,9,71,50
+9/21/2021,15,100,66,,,,1,10,8,1,1,1,0,0,0,13,62,41
+9/20/2021,13,85,51,,,,3,9,7,0,0,0,0,0,0,9,49,28
+9/19/2021,6,73,65,,,,1,6,5,0,0,0,0,0,0,2,40,38
+9/17/2021,17,67,72,,,,3,5,5,0,0,0,0,0,0,6,38,42
+9/16/2021,11,50,69,,,,0,2,2,0,0,0,0,0,0,6,32,40
+9/15/2021,11,39,58,,,,0,2,2,0,0,0,0,0,0,6,26,34
+9/14/2021,12,28,47,,,,1,2,2,0,0,0,0,0,0,7,20,28
