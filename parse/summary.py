@@ -4,8 +4,13 @@ import json
 import datetime
 import csv
 from git import Repo
-
+import re
 import pandas as pd
+
+# The title field include a string like "September 23, 2021". That's the
+# creaky way we figure out the date. Here's the regexp to match the
+# date.
+dateMatcher = re.compile('^([A-Za-z]+ [0-9]+, 202[1-9])')
 
 repo = Repo('.')
 
@@ -22,24 +27,35 @@ years = []
 seen = []
 
 for commit in list(repo.iter_commits('main', paths=path)):
-  dt = datetime.datetime.fromtimestamp(commit.committed_date)
-  date = dt.strftime('%Y-%m-%d')
+  data = (commit.tree / path).data_stream.read()
+  j = json.loads(data)
+  title = j[0]['title']
+  title_parts = title.split(':')
+  date_part = title_parts[1].strip()
+  dateMatch = dateMatcher.match(date_part)
+  if dateMatch:
+    date_string = dateMatch.group(1)
+  else:
+      print("Failed to parse time from {0}".format(title))
+      continue
+  dt = datetime.datetime.strptime(date_string, "%B %d, %Y")
   # We are iterating in reverse chronological order, so we should
   # get the most recent date first. All following dates should be
   # ignore becaues they are less up-to-date.
-  if date in seen:
+  if date_string in seen:
+      print("Continuing on {0}".format(dt))
       continue
-  seen.append(date)
+
+  revlist.append(j)
   years.append(dt.year)
-  revlist.append( (commit.tree / path).data_stream.read() )
+  seen.append(date_string)
 
 confirmed = []
 cumulative = []
 actions = []
 charter = []
 
-for filecontents in revlist:
-  j = json.loads(filecontents)
+for j in revlist:
   confirmed.append(j[0])
   cumulative.append(j[1])
   actions.append(j[2])
