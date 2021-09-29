@@ -17,11 +17,21 @@ path = "summary.json"
 revlist = []
 years = []
 
+# Only record one set of data per calendar day by tracking the
+# days we've seen already.
+seen = []
+
 for commit in list(repo.iter_commits('main', paths=path)):
   dt = datetime.datetime.fromtimestamp(commit.committed_date)
+  date = dt.strftime('%Y-%m-%d')
+  # We are iterating in reverse chronological order, so we should
+  # get the most recent date first. All following dates should be
+  # ignore becaues they are less up-to-date.
+  if date in seen:
+      continue
+  seen.append(date)
   years.append(dt.year)
   revlist.append( (commit.tree / path).data_stream.read() )
-
 
 confirmed = []
 cumulative = []
