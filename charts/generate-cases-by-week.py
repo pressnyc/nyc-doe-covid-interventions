@@ -45,9 +45,14 @@ with open("./csv/confirmed-cases-daily.csv") as csvDataFile:
             # What's the date of the start of this week?
             weekStart = date_obj - timedelta(days=date_obj.weekday())
             if not weekStart in weeklyTotals:
-                # Initialize this week if it's the first date.
-                weeklyTotals[weekStart] = 0
-            weeklyTotals[weekStart] += int(row[1])
+                weeklyTotals[weekStart] = {
+                    'total': 0,
+                    'students': 0,
+                    'staff': 0
+                } 
+            weeklyTotals[weekStart]['total'] += int(row[1])
+            weeklyTotals[weekStart]['students'] += int(row[2])
+            weeklyTotals[weekStart]['staff'] += int(row[3])
 
 # Get a sorted list of the weeks, so when plotting, we go from earliest to
 # latest (the original data goes from latest to earliest).
@@ -64,20 +69,27 @@ dates.pop()
 # of the Monday starting the week) and the other is a list of total cases for
 # that entire week.
 week_starting = []
-totals = []
+total = []
+students = []
+staff = []
 for week_start_date in dates:
     # We have some data prior to school starting. We're going to throw
     # that out so we start on September 13th, the monday that school started.
     chart_start_date = datetime(2021, 9, 13)
     if week_start_date < chart_start_date:
         continue
+    week_end = week_start_date + timedelta(days=6)
+    week_starting.append("{0} to {1}".format(week_start_date.strftime('%b %d'), week_end.strftime("%b %d, %Y")))
+    total.append(weeklyTotals[week_start_date]['total'])
+    students.append(weeklyTotals[week_start_date]['students'])
+    staff.append(weeklyTotals[week_start_date]['staff'])
 
-    week_starting.append(week_start_date.strftime('%Y-%m-%d'))
-    totals.append(weeklyTotals[week_start_date])
-
-plt.plot(week_starting, totals)
+plt.plot(week_starting, total, label="Total cases")
+plt.plot(week_starting, students, label="Students")
+plt.plot(week_starting, staff, label="Staff")
 plt.title('Total Covid Cases per week')
-plt.xlabel('Total for Week Starting on this date')
-plt.ylabel('Total confirmed covid cases')
+plt.xlabel('Date')
+plt.ylabel('Confirmed covid cases')
+plt.legend()
 #plt.show()
 plt.savefig('./charts/output/cases-by-week.png')
