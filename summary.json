@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: October 06, 2021 as of 6 PM",
+    "title": "Confirmed Positive COVID Cases: October 07, 2021 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "159",
-        "126",
-        "33"
+        "152",
+        "122",
+        "30"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - October 06, 2021 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - October 07, 2021 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "3,857",
-        "2,798",
-        "1,059"
+        "4,009",
+        "2,920",
+        "1,089"
       ]
     ]
   },
@@ -33,28 +33,28 @@
     "title": "Actions Taken - DOE and DECE Schools",
     "header": [
       "Action",
-      "10/06<br/>as of 6 PM",
+      "10/07<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "33",
-        "1,340",
-        "283"
+        "37",
+        "1,377",
+        "285"
       ],
       [
         "Partial Classroom Quarantine",
-        "90",
-        "1,616",
-        "588"
+        "85",
+        "1,701",
+        "584"
       ],
       [
         "Non-Classroom Quarantine",
-        "13",
-        "202",
-        "55"
+        "4",
+        "206",
+        "52"
       ],
       [
         "School Investigations",
@@ -74,21 +74,21 @@
     "title": "Actions Taken - Charter Schools",
     "header": [
       "Action",
-      "10/06<br/>as of 6 PM",
+      "10/07<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "1",
-        "176",
+        "4",
+        "180",
         "30"
       ],
       [
         "Partial Classroom Quarantine",
-        "5",
-        "148",
+        "9",
+        "157",
         "38"
       ],
       [
