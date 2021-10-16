@@ -43,6 +43,8 @@ jobs:
       run: python parse/attendance.py
     - name: execute charts/generate-cases-by-week.py
       run: python charts/generate-cases-by-week.py
+    - name: execute parse/attendance-mean.py
+      run: python parse/attendance-mean.py
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
