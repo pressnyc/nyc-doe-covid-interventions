@@ -7,7 +7,7 @@
         "doe-covid-data": {
             "tables": {
                 "activeInterventions": {
-                    "facets": ["interventionDateFormatted", "boroughFormatted", "buildingName"]
+                    "facets": ["interventionDateFormatted", "boroughFormatted", "siteName", "districtCode"]
                 }
             }
         }
