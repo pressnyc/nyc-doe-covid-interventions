@@ -10,46 +10,65 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
+
     - name: Check out this repo
       uses: actions/checkout@v2
       with:
         fetch-depth: 0
+
     - name: Fetch and format active interventions json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/activeinterventioncases | jq '.value' > activeinterventioncases.json
+
     - name: Create interventions CSV
       run: |-
         jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' activeinterventioncases.json > csv/activeinterventioncases.csv
+
     - name: Fetch and format school interventions json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/schoolinterventions | jq '.value' | jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' > csv/schoolinterventions.csv
+
     - name: Fetch and format summary json
       run: |-
         curl https://nycrtspublicportal.azurewebsites.net/data/summary | jq '.' > summary.json
+
     - name: Fetch and format summary json
       run: |-
         curl https://testingresults.schools.nyc/surveytesting/summary > testingresults-summary.html
+
+
     - name: setup python
       uses: actions/setup-python@v2
       with:
         python-version: '3.6.8'        
+
     - name: install python packages
       run: |
         python -m pip install --upgrade pip
         pip install -r parse/requirements.txt        
         pip install -r charts/requirements.txt        
+
     - name: execute parse/summary.py
       run: python parse/summary.py
+
     - name: execute parse/testingresults.py
       run: python parse/testingresults.py
+
     - name: execute parse/attendance.py
       run: python parse/attendance.py
+
     - name: execute charts/generate-cases-by-week.py
       run: python charts/generate-cases-by-week.py
+
     - name: execute parse/attendance-daily-mean.py
       run: python parse/attendance-daily-mean.py
+
     - name: execute parse/generate-cases-by-week.py
       run: python parse/generate-cases-by-week.py
+
+    - name: execute parse/cumulative-cases-from-school-testing.py
+      run: python parse/cumulative-cases-from-school-testing.py
+
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
