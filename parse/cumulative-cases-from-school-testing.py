@@ -48,7 +48,7 @@ for commit in list(repo.iter_commits('main', paths=path)):
       data = json.loads( matched[1] )
 
       output = {}
-      output['Positive cases identified by school testing'] = date_range
+      output['Positive cases identified by school testing'] = date_range.strip()
       output.update( data[2] )
       del output['Citywide']
 
