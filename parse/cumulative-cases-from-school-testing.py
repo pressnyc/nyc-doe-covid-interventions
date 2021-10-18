@@ -38,6 +38,9 @@ for commit in list(repo.iter_commits('main', paths=path)):
   if not date_string in seenDates:
       seenDates.append(date_string)
 
+
+      date_range = date_range.replace('Date Range: ','')
+      
       div_content = str( soup.find(id='ComulativeCityWide').find('script') )
 
       matched = re.search('\{"Data":(\[(.*)\])', div_content )
@@ -45,8 +48,9 @@ for commit in list(repo.iter_commits('main', paths=path)):
       data = json.loads( matched[1] )
 
       output = {}
-      output['Date'] = date_range
+      output['Positive cases identified by school testing'] = date_range
       output.update( data[2] )
+      del output['Citywide']
 
       output_array.append(output)
 
