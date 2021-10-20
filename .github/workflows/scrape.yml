@@ -24,9 +24,9 @@ jobs:
       run: |-
         jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' activeinterventioncases.json > csv/activeinterventioncases.csv
 
-    - name: Fetch and format school interventions json
-      run: |-
-        curl https://nycrtspublicportal.azurewebsites.net/data/schoolinterventions | jq '.value' | jq -r try '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' > csv/schoolinterventions.csv
+#    - name: Fetch and format school interventions json
+#      run: |-
+#        curl https://nycrtspublicportal.azurewebsites.net/data/schoolinterventions | jq '.value' | jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' > csv/schoolinterventions.csv
 
     - name: Fetch and format summary json
       run: |-
