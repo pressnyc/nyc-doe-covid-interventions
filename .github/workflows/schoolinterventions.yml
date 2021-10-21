@@ -18,7 +18,7 @@ jobs:
 
     - name: Fetch and format school interventions json
       run: |-
-        curl -s https://nycrtspublicportal.azurewebsites.net/data/schoolinterventions | jq '.value' | jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' > csv/schoolinterventions.csv
+        curl -s https://nycrtspublicportal.azurewebsites.net/data/schoolinterventions | jq '.value' | jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' > csv/schoolinterventions.csv 2> /dev/null
 
     - name: Commit and push if it changed
       run: |-
