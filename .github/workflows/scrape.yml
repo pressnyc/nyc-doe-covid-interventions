@@ -50,9 +50,6 @@ jobs:
     - name: execute parse/testingresults.py
       run: python parse/testingresults.py
 
-    - name: execute parse/attendance.py
-      run: python parse/attendance.py
-
     - name: execute charts/generate-cases-by-week.py
       run: python charts/generate-cases-by-week.py
 
