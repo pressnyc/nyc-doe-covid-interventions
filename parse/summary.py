@@ -91,7 +91,67 @@ def make_csv(data, output_filename):
     data_file.close()
 
 make_csv(cumulative, 'csv/confirmed-cases-cumulative.csv')
-make_csv(confirmed, 'csv/confirmed-cases-daily.csv')
+
+
+
+def make_daily_from_cumulative(data, output_filename):
+
+    output_array = []
+    
+    previous_title = None;
+
+    previous_total = 0;
+    previous_students = 0;
+    previous_staff = 0;
+    current_total = 0;
+    current_students = 0;
+    current_staff = 0;
+
+    for c in data:
+        
+      c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
+      c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 14, 2020 - ','Confirmed Positive COVID Cases, ')
+          
+      current_total = previous_total - int(c['rows'][0][0].replace(',', ''))
+      current_students = previous_students - int(c['rows'][0][1].replace(',', ''))
+      current_staff = previous_staff - int(c['rows'][0][2].replace(',', ''))
+    
+      if current_total < 0:
+         current_total = previous_total
+         current_students = previous_students
+         current_staff = previous_staff
+    
+      if previous_title:
+          output = {
+            'Title': previous_title,
+            'Cumulative ' + c['header'][0]: previous_total,
+            'Cumulative ' + c['header'][1]: previous_students,
+            'Cumulative ' + c['header'][2]: previous_staff,
+            c['header'][0]: current_total,
+            c['header'][1]: current_students,
+            c['header'][2]: current_staff,
+          }
+          output_array.append(output)
+
+      previous_title =  c['title']
+      previous_total = int(c['rows'][0][0].replace(',', ''))
+      previous_students = int(c['rows'][0][1].replace(',', ''))
+      previous_staff = int(c['rows'][0][2].replace(',', ''))
+      
+    # end for
+    
+    data_file = open(output_filename, 'w')
+    csv_writer = csv.writer(data_file)
+    count = 0
+    for o in output_array:
+        if count == 0: 
+            header = o.keys()
+            csv_writer.writerow(header)
+            count += 1
+        csv_writer.writerow(o.values()) 
+    data_file.close()
+
+make_daily_from_cumulative(cumulative, 'csv/confirmed-cases-daily.csv')
 
 
 
