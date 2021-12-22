@@ -50,9 +50,9 @@ with open("./csv/confirmed-cases-daily.csv") as csvDataFile:
                     'students': 0,
                     'staff': 0
                 } 
-            weeklyTotals[weekStart]['total'] += int(row[1])
-            weeklyTotals[weekStart]['students'] += int(row[2])
-            weeklyTotals[weekStart]['staff'] += int(row[3])
+            weeklyTotals[weekStart]['total'] += int(row[4])
+            weeklyTotals[weekStart]['students'] += int(row[5])
+            weeklyTotals[weekStart]['staff'] += int(row[6])
 
 # Get a sorted list of the weeks, so when plotting, we go from earliest to
 # latest (the original data goes from latest to earliest).
