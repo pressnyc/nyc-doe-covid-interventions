@@ -29,8 +29,8 @@ with open("./csv/confirmed-cases-daily.csv") as csvDataFile:
         # Skip the header
         if title == "Title":
             continue
-        title_parts = title.split(':')
-        date_part = title_parts[1].strip()
+        # title format "Confirmed Positive COVID Cases, December 17, 2021 at 6 PM"
+        date_part = title.replace('Confirmed Positive COVID Cases, ','').replace(' at 6 PM','')
         dateMatch = dateMatcher.match(date_part)
         if dateMatch:
             date_string = dateMatch.group(1)
