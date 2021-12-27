@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: December 23, 2021 as of 6 PM",
+    "title": "Confirmed Positive COVID Cases: December 26, 2021 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "1,009",
-        "658",
-        "351"
+        "375",
+        "255",
+        "120"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - December 23, 2021 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - December 26, 2021 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "22,981",
-        "16,515",
-        "6,466"
+        "24,564",
+        "17,597",
+        "6,967"
       ]
     ]
   },
@@ -33,28 +33,28 @@
     "title": "Actions Taken - DOE and DECE Schools",
     "header": [
       "Action",
-      "12/23<br/>as of 6 PM",
+      "12/26<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "34",
-        "4,573",
-        "352"
+        "21",
+        "4,650",
+        "170"
       ],
       [
         "Partial Classroom Quarantine",
-        "821",
-        "13,391",
-        "3,986"
+        "292",
+        "14,649",
+        "2,702"
       ],
       [
         "Non-Classroom Quarantine",
-        "23",
-        "699",
-        "160"
+        "8",
+        "735",
+        "108"
       ],
       [
         "School Investigations",
@@ -66,7 +66,7 @@
         "School Closures",
         "0",
         "17",
-        "11"
+        "8"
       ]
     ]
   },
@@ -74,7 +74,7 @@
     "title": "Actions Taken - Charter Schools",
     "header": [
       "Action",
-      "12/23<br/>as of 6 PM",
+      "12/26<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
@@ -83,19 +83,19 @@
         "Classroom Closures",
         "0",
         "345",
-        "3"
+        "0"
       ],
       [
         "Partial Classroom Quarantine",
-        "23",
-        "858",
-        "190"
+        "4",
+        "867",
+        "34"
       ],
       [
         "Non-Classroom Quarantine",
         "0",
-        "56",
-        "11"
+        "57",
+        "4"
       ],
       [
         "School Investigations",
