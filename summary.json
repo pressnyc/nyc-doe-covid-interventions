@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: December 28, 2021 as of 6 PM",
+    "title": "Confirmed Positive COVID Cases: December 29, 2021 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "1,153",
-        "803",
-        "350"
+        "869",
+        "365",
+        "504"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - December 28, 2021 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - December 29, 2021 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "27,490",
-        "19,536",
-        "7,954"
+        "28,650",
+        "20,101",
+        "8,549"
       ]
     ]
   },
@@ -33,34 +33,34 @@
     "title": "Actions Taken - DOE and DECE Schools",
     "header": [
       "Action",
-      "12/28<br/>as of 6 PM",
+      "12/29<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "35",
-        "4,780",
-        "163"
+        "80",
+        "4,871",
+        "220"
       ],
       [
         "Partial Classroom Quarantine",
-        "991",
-        "16,949",
-        "3,316"
+        "517",
+        "17,672",
+        "3,489"
       ],
       [
         "Non-Classroom Quarantine",
-        "21",
-        "811",
-        "113"
+        "38",
+        "864",
+        "146"
       ],
       [
         "School Investigations",
-        "0",
-        "131",
-        "0"
+        "1",
+        "133",
+        "2"
       ],
       [
         "School Closures",
@@ -74,7 +74,7 @@
     "title": "Actions Taken - Charter Schools",
     "header": [
       "Action",
-      "12/28<br/>as of 6 PM",
+      "12/29<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
@@ -87,14 +87,14 @@
       ],
       [
         "Partial Classroom Quarantine",
-        "4",
-        "896",
-        "26"
+        "18",
+        "914",
+        "30"
       ],
       [
         "Non-Classroom Quarantine",
-        "0",
-        "58",
+        "1",
+        "59",
         "2"
       ],
       [
