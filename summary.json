@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: December 30, 2021 as of 6 PM",
+    "title": "Reported COVID Cases: January 04, 2022 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "3,334",
-        "2,010",
-        "1,324"
+        "12,723",
+        "8,743",
+        "3,980"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - December 30, 2021 at 6 PM",
+    "title": "Reported COVID Cases for January 03, 2022",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,39 @@
     ],
     "rows": [
       [
-        "32,160",
-        "22,167",
-        "9,993"
+        "13,957",
+        "8,633",
+        "5,324"
+      ]
+    ]
+  },
+  {
+    "title": "Reported COVID Cases between December 24, 2021 to January 02, 2022",
+    "header": [
+      "Total",
+      "Students",
+      "Staff"
+    ],
+    "rows": [
+      [
+        "11,327",
+        "6,266",
+        "5,061"
+      ]
+    ]
+  },
+  {
+    "title": "Cumulative Reported Cases: September 13, 2021 - January 04, 2022 at 6 PM",
+    "header": [
+      "Total",
+      "Students",
+      "Staff"
+    ],
+    "rows": [
+      [
+        "61,453",
+        "40,445",
+        "21,008"
       ]
     ]
   },
@@ -33,40 +63,40 @@
     "title": "Actions Taken - DOE and DECE Schools",
     "header": [
       "Action",
-      "12/30<br/>as of 6 PM",
+      "1/05<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
     "rows": [
       [
         "Classroom Closures",
-        "41",
-        "4,920",
-        "199"
+        "0",
+        "4,932",
+        "33"
       ],
       [
         "Partial Classroom Quarantine",
-        "2,903",
-        "20,664",
-        "4,355"
+        "0",
+        "20,669",
+        "10"
       ],
       [
         "Non-Classroom Quarantine",
-        "16",
+        "0",
         "883",
-        "126"
+        "12"
       ],
       [
         "School Investigations",
         "0",
-        "133",
-        "1"
+        "135",
+        "0"
       ],
       [
         "School Closures",
         "0",
         "17",
-        "8"
+        "0"
       ]
     ]
   },
@@ -74,7 +104,7 @@
     "title": "Actions Taken - Charter Schools",
     "header": [
       "Action",
-      "12/30<br/>as of 6 PM",
+      "1/05<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
@@ -87,15 +117,15 @@
       ],
       [
         "Partial Classroom Quarantine",
-        "21",
+        "0",
         "936",
-        "40"
+        "0"
       ],
       [
         "Non-Classroom Quarantine",
         "0",
         "59",
-        "1"
+        "0"
       ],
       [
         "School Investigations",
