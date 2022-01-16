@@ -1,4 +1,4 @@
-name: Scrape latest data
+name: Scrape Active Interventions
 
 on:
   push:
