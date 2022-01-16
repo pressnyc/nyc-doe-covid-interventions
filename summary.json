@@ -1,36 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: January 04, 2022 as of 6 PM",
-    "header": [
-      "Total",
-      "Students",
-      "Staff"
-    ],
-    "rows": [
-      [
-        "12,723",
-        "8,743",
-        "3,980"
-      ]
-    ]
-  },
-  {
-    "title": "Reported COVID Cases for January 03, 2022",
-    "header": [
-      "Total",
-      "Students",
-      "Staff"
-    ],
-    "rows": [
-      [
-        "13,957",
-        "8,633",
-        "5,324"
-      ]
-    ]
-  },
-  {
-    "title": "Reported COVID Cases between December 24, 2021 to January 02, 2022",
+    "title": "Confirmed Positive COVID Cases: January 02, 2022 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -45,7 +15,7 @@
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 13, 2021 - January 04, 2022 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - January 04, 2022 at 6 PM",
     "header": [
       "Total",
       "Students",

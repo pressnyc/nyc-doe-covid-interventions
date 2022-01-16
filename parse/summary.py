@@ -56,9 +56,9 @@ actions = []
 charter = []
 
 for j in revlist:
-  confirmed.append(j[0])
-  cumulative.append(j[1])
-  actions.append(j[2])
+  confirmed.append(j[0]) # first child
+  cumulative.append(j[1]) # second child
+  actions.append(j[2]) # third child
   try:
     charter.append(j[3])
   except:
@@ -111,7 +111,8 @@ def make_daily_from_cumulative(data, output_filename):
         
       c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
       c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 14, 2020 - ','Confirmed Positive COVID Cases, ')
-          
+      c['title'] = c['title'].replace('Cumulative Reported Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
+
       current_total = previous_total - int(c['rows'][0][0].replace(',', ''))
       current_students = previous_students - int(c['rows'][0][1].replace(',', ''))
       current_staff = previous_staff - int(c['rows'][0][2].replace(',', ''))
