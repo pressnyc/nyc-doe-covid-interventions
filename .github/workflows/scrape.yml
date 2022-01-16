@@ -53,9 +53,6 @@ jobs:
     - name: execute charts/generate-cases-by-week.py
       run: python charts/generate-cases-by-week.py
 
-    - name: execute parse/attendance-daily-mean.py
-      run: python parse/attendance-daily-mean.py
-
     - name: execute parse/generate-cases-by-week.py
       run: python parse/generate-cases-by-week.py
 
