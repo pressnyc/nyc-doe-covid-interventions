@@ -117,6 +117,8 @@ def make_daily_from_cumulative(data, output_filename):
       current_students = previous_students - int(c['rows'][0][1].replace(',', ''))
       current_staff = previous_staff - int(c['rows'][0][2].replace(',', ''))
     
+      if current_total == 0 and current_students == 0 and current_staff == 0: continue
+    
       if current_total < 0:
          current_total = previous_total
          current_students = previous_students
