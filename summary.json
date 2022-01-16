@@ -1,6 +1,6 @@
 [
   {
-    "title": "Confirmed Positive COVID Cases: January 04, 2022 as of 6 PM",
+    "title": "Confirmed Positive COVID Cases: January 05, 2022 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "12,723",
-        "8,743",
-        "3,980"
+        "13,810",
+        "10,831",
+        "2,979"
       ]
     ]
   },
   {
-    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - January 04, 2022 at 6 PM",
+    "title": "Confirmed Cumulative Positive COVID Cases: September 13, 2021 - January 05, 2022 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "61,453",
-        "40,445",
-        "21,008"
+        "75,263",
+        "51,276",
+        "23,987"
       ]
     ]
   },
@@ -41,20 +41,20 @@
       [
         "Classroom Closures",
         "0",
-        "4,932",
-        "33"
+        "4,931",
+        "32"
       ],
       [
         "Partial Classroom Quarantine",
         "0",
-        "20,669",
-        "10"
+        "20,666",
+        "7"
       ],
       [
         "Non-Classroom Quarantine",
         "0",
         "883",
-        "12"
+        "11"
       ],
       [
         "School Investigations",
@@ -88,7 +88,7 @@
       [
         "Partial Classroom Quarantine",
         "0",
-        "936",
+        "937",
         "0"
       ],
       [
