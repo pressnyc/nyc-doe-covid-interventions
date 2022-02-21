@@ -1,0 +1,86 @@
+[
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "d4e8ce00-32f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "P.S. 076 William Hallet - Q076 - Q076 - 30Q076 - 36-36 10 Street",
+    "nycsr_building.nycsr_buildingid": "d2e8ce00-32f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73941630,
+    "nycsr_building.nycsr_latitude": 40760862,
+    "nycsr_building.nycsr_buildingname": "P.S. 76 - QUEENS",
+    "nycsr_building.nycsr_address": "36-36 10 Street"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 1,
+    "EmployeeCases": 0,
+    "nycsr_locationsiteid": "df2ece86-32f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "Bard High School Early College Queens - Q299 - Q735 - 24Q299 - 30-20 THOMSON AVENUE",
+    "nycsr_building.nycsr_buildingid": "db2ece86-32f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73937004,
+    "nycsr_building.nycsr_latitude": 40744175,
+    "nycsr_building.nycsr_buildingname": "QUEENS HIGH SCHOOL COMPLEX - Q",
+    "nycsr_building.nycsr_address": "30-20 THOMSON AVENUE"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "0bc73b4a-32f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "The Gordon Parks School - Q270 - Q270 - 29Q270 - 233-15 MERRICK BOULEVARD",
+    "nycsr_building.nycsr_buildingid": "52a10a44-32f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73736232,
+    "nycsr_building.nycsr_latitude": 40675070,
+    "nycsr_building.nycsr_buildingname": "P.S. 270 - QUEENS",
+    "nycsr_building.nycsr_address": "233-15 MERRICK BOULEVARD"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "4e2b3eee-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "The Christa McAuliffe School\\I.S. 187 - K187 - K486 - 20K187 - 1171 65 STREET",
+    "nycsr_building.nycsr_buildingid": "4f2b3eee-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -74003883,
+    "nycsr_building.nycsr_latitude": 40627929,
+    "nycsr_building.nycsr_buildingname": "I.S. 187 - BROOKLYN",
+    "nycsr_building.nycsr_address": "1171 65 STREET"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "c98442ee-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "P.S. 032 State Street - Q032 - Q032 - 25Q032 - 171-11 35 AVENUE",
+    "nycsr_building.nycsr_buildingid": "ca8442ee-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73794323,
+    "nycsr_building.nycsr_latitude": 40765459,
+    "nycsr_building.nycsr_buildingname": "P.S. 32 - QUEENS",
+    "nycsr_building.nycsr_address": "171-11 35 AVENUE"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "b5b36d80-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "P.S. 179 Kensington - K179 - K179 - 20K179 - 202 AVENUE C",
+    "nycsr_building.nycsr_buildingid": "13d1de79-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73977260,
+    "nycsr_building.nycsr_latitude": 40640127,
+    "nycsr_building.nycsr_buildingname": "P.S. 179 - BROOKLYN",
+    "nycsr_building.nycsr_address": "202 AVENUE C"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 1,
+    "EmployeeCases": 0,
+    "nycsr_locationsiteid": "8c886843-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "P.S. 006 Lillie D. Blake - M006 - M006 - 02M006 - 45 EAST  81 STREET",
+    "nycsr_building.nycsr_buildingid": "8d886843-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73960427,
+    "nycsr_building.nycsr_latitude": 40777737,
+    "nycsr_building.nycsr_buildingname": "P.S. 6 - MANHATTAN",
+    "nycsr_building.nycsr_address": "45 EAST  81 STREET"
+  }
+]
