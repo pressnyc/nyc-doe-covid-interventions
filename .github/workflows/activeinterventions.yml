@@ -24,3 +24,12 @@ jobs:
       run: |-
         jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' activeinterventioncases.json > csv/activeinterventioncases.csv
 
+
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "Active interventions: ${timestamp}" || exit 0
+        git push
