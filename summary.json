@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: April 25, 2022 as of 6 PM",
+    "title": "Reported COVID Cases: April 26, 2022 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "1,569",
-        "1,006",
-        "563"
+        "844",
+        "591",
+        "253"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 13, 2021 - April 25, 2022 at 6 PM",
+    "title": "Cumulative Reported Cases: September 13, 2021 - April 26, 2022 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "189,787",
-        "145,148",
-        "44,639"
+        "190,631",
+        "145,739",
+        "44,892"
       ]
     ]
   },
@@ -33,7 +33,7 @@
     "title": "Actions Taken - DOE and DECE Schools",
     "header": [
       "Action",
-      "4/25<br/>as of 6 PM",
+      "4/26<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
@@ -74,7 +74,7 @@
     "title": "Actions Taken - Charter Schools",
     "header": [
       "Action",
-      "4/25<br/>as of 6 PM",
+      "4/26<br/>as of 6 PM",
       "Cumulative<br/>(since 9/13)",
       "Currently in effect"
     ],
