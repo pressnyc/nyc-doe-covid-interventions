@@ -35,7 +35,7 @@
 <div id="ComulativeCityWide" class="main-wrap container">
     <h2>Cumulative Testing Summary Citywide</h2>
     <ul>
-        <li>Date Range: 9/13/2021 through 6/22/2022 </li>
+        <li>Date Range: 7/11/2022 through 6/22/2022 </li>
     </ul>
 
     <div class="table-responsive" id="Comulative" name="Comulative"></div><script>kendo.syncReady(function(){jQuery("#Comulative").kendoGrid({"autoBind":true,"columns":[{"title":"Citywide","field":"Citywide","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Total","field":"Total","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Students","field":"Students","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true},{"title":"Staff","field":"Staff","filterable":{"messages":{"selectedItemsFormat":"{0} selected items"},"checkAll":false},"encoded":true}],"scrollable":false,"dataSource":{"type":(function(){if(kendo.data.transports['aspnetmvc-ajax']){return 'aspnetmvc-ajax';} else{throw new Error('The kendo.aspnetmvc.min.js script is not included.');}})(),"transport":{"read":{"url":""},"prefix":""},"schema":{"data":"Data","total":"Total","errors":"Errors","model":{"fields":{"Citywide":{"type":"string"},"Total":{"type":"string"},"Students":{"type":"string"},"Staff":{"type":"string"}}}},"data":{"Data":[{"Citywide":"Schools Visited","Total":"69735","Students":"NA","Staff":"NA"},{"Citywide":"Tests Conducted","Total":"2453275","Students":"2170283","Staff":"282994"},{"Citywide":"Total positive tests identified","Total":"32497","Students":"29608","Staff":"2889"},{"Citywide":"Citywide Survey Testing Positivity Rate","Total":"1.32%","Students":null,"Staff":null},{"Citywide":"Citywide Survey Testing Positivity Rate (7-Day Rolling Average)","Total":"1.10%","Students":null,"Staff":null}],"Total":5}}});});</script>
@@ -45,7 +45,7 @@
     <h2>Cumulative Testing Summary by Borough </h2>
 
     <ul>
-        <li>Date Range: 9/13/2021 through 6/22/2022 </li>
+        <li>Date Range: 7/11/2022 through 6/22/2022 </li>
         <li>Note: testing data includes both students and school-based staff</li>
     </ul>
 
