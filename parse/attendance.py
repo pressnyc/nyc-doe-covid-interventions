@@ -38,7 +38,7 @@ async def hmm():
     await page.content()
 
     print('await page.select')
-    await page.select('table', 'ALL')
+    await page.select('.xxl', 'ALL')
     await asyncio.sleep(1)  
 
     print('await page.content')
