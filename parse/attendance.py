@@ -35,13 +35,13 @@ async def hmm():
     await asyncio.sleep(.5)  
 
     print('await page.content')
-    await page.content()
-
-    print('await page.select')
-    await page.select('.xxl', 'ALL')
-    await asyncio.sleep(1)  
-
-    print('await page.content')
+#    await page.content()
+#
+#    print('await page.select')
+#    await page.select.$('table', 'ALL')
+#    await asyncio.sleep(1)  
+#
+#    print('await page.content')
     page_content = await page.content()
 
     print('await page_to_csv')
