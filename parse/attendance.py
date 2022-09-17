@@ -38,19 +38,11 @@ async def hmm():
     await page.content()
 
     print('await page.select')
-    const f = await page.$('#ctl00_ContentPlaceHolder1_gvAttendance_ctl23_ddlPageSize')
-    await f.select("ALL")
-    await page.waitForTimeout(4000)
+    await page.select.$('#ctl00_ContentPlaceHolder1_gvAttendance_ctl23_ddlPageSize', 'ALL')
+    await asyncio.sleep(1)
 
     print('await page.content')
     page_content = await page.content()
-
-#    print('await page.select')
-#    await page.select.$('table', 'ALL')
-#    await asyncio.sleep(1)  
-#
-#    print('await page.content')
-#    page_content = await page.content()
 
     print('await page_to_csv')
     await page_to_csv(page_content)    
