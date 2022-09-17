@@ -38,7 +38,7 @@ async def hmm():
     await page.content()
 
     print('await page.select')
-    await page.select.$('#ctl00_ContentPlaceHolder1_gvAttendance_ctl23_ddlPageSize', 'ALL')
+    await page.select('#ctl00_ContentPlaceHolder1_gvAttendance_ctl23_ddlPageSize', 'ALL')
     await asyncio.sleep(1)
 
     print('await page.content')
