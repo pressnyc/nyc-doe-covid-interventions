@@ -24,35 +24,40 @@ for commit in list(repo.iter_commits('main', paths=path)):
   page_content = (commit.tree / path).data_stream.read()
 
   soup = BeautifulSoup(page_content, 'lxml')
-  date_range = soup.find(id='ComulativeCityWide').find('li').text
+
+  try:
+    date_range = soup.find(id='ComulativeCityWide').find('li').text
+
+    dateMatcher = re.compile('^Date Range: 9/13/2021 through (.*)')
+    dateMatch = dateMatcher.match(date_range)
+    if dateMatch:
+        date_string = dateMatch.group(1)
+    else:
+        continue
 
 
-  dateMatcher = re.compile('^Date Range: 9/13/2021 through (.*)')
-  dateMatch = dateMatcher.match(date_range)
-  if dateMatch:
-      date_string = dateMatch.group(1)
-  else:
-      continue
+    if not date_string in seenDates:
+        seenDates.append(date_string)
 
 
-  if not date_string in seenDates:
-      seenDates.append(date_string)
-
-
-      date_range = date_range.replace('Date Range: ','')
+        date_range = date_range.replace('Date Range: ','')
       
-      div_content = str( soup.find(id='ComulativeCityWide').find('script') )
+        div_content = str( soup.find(id='ComulativeCityWide').find('script') )
 
-      matched = re.search('\{"Data":(\[(.*)\])', div_content )
+        matched = re.search('\{"Data":(\[(.*)\])', div_content )
 
-      data = json.loads( matched[1] )
+        data = json.loads( matched[1] )
 
-      output = {}
-      output['Positive cases identified by school testing'] = date_range.strip()
-      output.update( data[2] )
-      del output['Citywide']
+        output = {}
+        output['Positive cases identified by school testing'] = date_range.strip()
+        output.update( data[2] )
+        del output['Citywide']
 
-      output_array.append(output)
+        output_array.append(output)
 
+  except:
+      pass
 
-pd.DataFrame(output_array).to_csv('csv/cumulative-cases-from-school-testing.csv', index=False)
+if output_array:
+  pd.DataFrame(output_array).to_csv('csv/cumulative-cases-from-school-testing.csv', index=False)
+
