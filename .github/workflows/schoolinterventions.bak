@@ -1,0 +1,30 @@
+name: Scrape school interventions
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Check out this repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: Fetch and format school interventions json
+      run: |-
+        curl -s https://nycrtspublicportal.azurewebsites.net/data/schoolinterventions | jq '.value' | jq -r '(.[0] | keys_unsorted) as $keys | ([$keys] + map([.[ $keys[] ]])) [] | @csv' > csv/schoolinterventions.csv
+
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automated"
+        git config user.email "actions@users.noreply.github.com"
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "School interventions: ${timestamp}" || exit 0
+        git push
