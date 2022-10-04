@@ -18,7 +18,7 @@ jobs:
 
     - name: Fetch and format schoolcases JSON
       run: |-
-        curl https://nycrtspublicportal.azurewebsites.net/data/map | jq > schoolcases.json
+        curl https://ws.nycenet.edu/rts/publicportal/data/map | jq > schoolcases.json
 
     - name: Create schoolcases CSV
       run: |-
