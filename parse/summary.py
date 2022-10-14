@@ -110,24 +110,33 @@ def make_daily_from_cumulative(data, output_filename):
     current_students = 0;
     current_staff = 0;
 
-    for c in data:
+
+    for i in range(len(data)):
+
+      c = data[i]
         
       c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
       c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 14, 2020 - ','Confirmed Positive COVID Cases, ')
       c['title'] = c['title'].replace('Cumulative Reported Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
       c['title'] = c['title'].replace('Cumulative Reported Cases: September 08, 2022 - ','Confirmed Positive COVID Cases, ')
 
+
       current_total = previous_total - int(c['rows'][0][0].replace(',', ''))
       current_students = previous_students - int(c['rows'][0][1].replace(',', ''))
       current_staff = previous_staff - int(c['rows'][0][2].replace(',', ''))
     
       if current_total == 0 and current_students == 0 and current_staff == 0: continue
-    
+
       if current_total < 0:
          current_total = previous_total
          current_students = previous_students
          current_staff = previous_staff
     
+      if previous_title is not None and 'October 13, 2022' in previous_title:
+         current_total = int(confirmed[i - 1]['rows'][0][0])
+         current_students = int(confirmed[i - 1]['rows'][0][1])
+         current_staff = int(confirmed[i - 1]['rows'][0][2])
+
       if previous_title:
           output = {
             'Title': previous_title,
@@ -139,6 +148,7 @@ def make_daily_from_cumulative(data, output_filename):
             c['header'][2]: current_staff,
           }
           output_array.append(output)
+          print(output)
 
       previous_title =  c['title']
       previous_total = int(c['rows'][0][0].replace(',', ''))
