@@ -115,6 +115,7 @@ def make_daily_from_cumulative(data, output_filename):
       c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
       c['title'] = c['title'].replace('Confirmed Cumulative Positive COVID Cases: September 14, 2020 - ','Confirmed Positive COVID Cases, ')
       c['title'] = c['title'].replace('Cumulative Reported Cases: September 13, 2021 - ','Confirmed Positive COVID Cases, ')
+      c['title'] = c['title'].replace('Cumulative Reported Cases: September 08, 2022 - ','Confirmed Positive COVID Cases, ')
 
       current_total = previous_total - int(c['rows'][0][0].replace(',', ''))
       current_students = previous_students - int(c['rows'][0][1].replace(',', ''))

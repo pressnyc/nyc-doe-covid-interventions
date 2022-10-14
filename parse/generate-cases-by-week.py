@@ -20,6 +20,7 @@ seenDates = []
 # creaky way we figure out the date. Here's the regexp to match the
 # date.
 dateMatcher = re.compile('^([A-Za-z]+ [0-9]+, 202[1-9])')
+dateMatcherRange = re.compile('^([A-Za-z]+ [0-9]+, 202[1-9]) - ([A-Za-z]+ [0-9]+, 202[1-9])')
 with open("./csv/confirmed-cases-daily.csv") as csvDataFile:
     csvReader = csv.reader(csvDataFile)
     for row in csvReader:
@@ -28,13 +29,23 @@ with open("./csv/confirmed-cases-daily.csv") as csvDataFile:
         # Skip the header
         if title == "Title":
             continue
-        # title format "Confirmed Positive COVID Cases, December 17, 2021 at 6 PM"
-        date_part = title.replace('Confirmed Positive COVID Cases, ','').replace(' at 6 PM','')
-        dateMatch = dateMatcher.match(date_part)
-        if dateMatch:
-            date_string = dateMatch.group(1)
+
+        date_string = ''
+        if ' - ' in title:
+          date_part = title.replace('Cumulative Reported Cases: September 08, 2022 - ','').replace(' at 6 PM','')
+          dateMatch = dateMatcher.match(date_part)
+          if dateMatch:
+              date_string = dateMatch.group(1)
+          else:
+              sys.exit("Failed to parse date from range: {0}".format(date_part))
         else:
-            sys.exit("Failed to parse date: {0}".format(date_string))
+          # title format "Confirmed Positive COVID Cases, December 17, 2021 at 6 PM"
+          date_part = title.replace('Confirmed Positive COVID Cases, ','').replace(' at 6 PM','')
+          dateMatch = dateMatcher.match(date_part)
+          if dateMatch:
+              date_string = dateMatch.group(1)
+          else:
+              sys.exit("Failed to parse date: {0}".format(date_string))
         date_obj = datetime.strptime(date_string, "%B %d, %Y")
         # We may have the same date twice, in which case take the first one we encounter.
         # That should be the most recent one.
