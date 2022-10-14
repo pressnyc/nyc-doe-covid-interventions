@@ -18,7 +18,7 @@ jobs:
 
     - name: Fetch and format summary json
       run: |-
-        curl https://nycrtspublicportal.azurewebsites.net/data/summary | jq '.' > summary.json
+        curl https://ws.nycenet.edu/rts/publicportal/data/summary | jq '.' > summary.json
 
     - name: Fetch and format summary json
       run: |-

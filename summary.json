@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "0",
-        "0",
-        "0"
+        "364",
+        "224",
+        "140"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 13, 2021 - October 13, 2022 at 6 PM",
+    "title": "Cumulative Reported Cases: September 08, 2022 - October 13, 2022 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,91 +23,9 @@
     ],
     "rows": [
       [
-        "267,119",
-        "198,890",
-        "68,229"
-      ]
-    ]
-  },
-  {
-    "title": "Actions Taken - DOE and DECE Schools",
-    "header": [
-      "Action",
-      "10/13<br/>as of 6 PM",
-      "Cumulative<br/>(since 9/13)",
-      "Currently in effect"
-    ],
-    "rows": [
-      [
-        "Classroom Closures",
-        "0",
-        "4,931",
-        "0"
-      ],
-      [
-        "Partial Classroom Quarantine",
-        "0",
-        "20,665",
-        "0"
-      ],
-      [
-        "Non-Classroom Quarantine",
-        "0",
-        "883",
-        "0"
-      ],
-      [
-        "School Assessments",
-        "0",
-        "167",
-        "0"
-      ],
-      [
-        "School Closures",
-        "0",
-        "17",
-        "0"
-      ]
-    ]
-  },
-  {
-    "title": "Actions Taken - Charter Schools",
-    "header": [
-      "Action",
-      "10/13<br/>as of 6 PM",
-      "Cumulative<br/>(since 9/13)",
-      "Currently in effect"
-    ],
-    "rows": [
-      [
-        "Classroom Closures",
-        "0",
-        "345",
-        "0"
-      ],
-      [
-        "Partial Classroom Quarantine",
-        "0",
-        "936",
-        "0"
-      ],
-      [
-        "Non-Classroom Quarantine",
-        "0",
-        "59",
-        "0"
-      ],
-      [
-        "School Assessments",
-        "0",
-        "3",
-        "0"
-      ],
-      [
-        "School Closures",
-        "0",
-        "0",
-        "0"
+        "16,265",
+        "10,799",
+        "5,466"
       ]
     ]
   }
