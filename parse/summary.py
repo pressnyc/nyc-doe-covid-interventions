@@ -58,7 +58,10 @@ charter = []
 for j in revlist:
   confirmed.append(j[0]) # first child
   cumulative.append(j[1]) # second child
-  actions.append(j[2]) # third child
+  try:
+    actions.append(j[2]) # third child
+  except:
+    pass
   try:
     charter.append(j[3])
   except:
