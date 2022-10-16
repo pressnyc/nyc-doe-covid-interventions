@@ -1,4 +1,4 @@
-name: Scrape latest data
+name: Data processing with python scripts
 
 on:
   push:
