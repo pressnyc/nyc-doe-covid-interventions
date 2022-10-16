@@ -16,15 +16,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Fetch and format summary json
-      run: |-
-        curl https://ws.nycenet.edu/rts/publicportal/data/summary | jq '.' > summary.json
-
-    - name: Fetch and format summary json
-      run: |-
-        curl https://testingresults.schools.nyc/surveytesting/summary > testingresults-summary.html
-
-
     - name: setup python
       uses: actions/setup-python@v2
       with:
