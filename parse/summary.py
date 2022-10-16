@@ -189,7 +189,7 @@ def make_daily_from_cumulative(data, output_filename):
             c['header'][2]: current_staff,
           }
           output_array.append(output)
-          print(output)
+          #print(output)
 
       previous_title =  c['title']
       previous_total = int(c['rows'][0][0].replace(',', ''))
