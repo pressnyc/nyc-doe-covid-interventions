@@ -69,10 +69,48 @@ for j in revlist:
 
 
 
+
+# added this to address backfill of missing summary.json from screenshot
+
+def sort_list_by_date(data):
+
+  sortme = []
+
+  for i in range(len(data)):
+    c = data[i]        
+    date_string = c['title']
+    date_string = date_string.replace('Confirmed Cumulative Positive COVID Cases: September 13, 2021 - ','')
+    date_string = date_string.replace('Confirmed Cumulative Positive COVID Cases: September 14, 2020 - ','')
+    date_string = date_string.replace('Cumulative Reported Cases: September 13, 2021 - ','')
+    date_string = date_string.replace('Cumulative Reported Cases: September 08, 2022 - ','')
+    date_string = date_string.replace('Reported COVID Cases: ','')
+    date_string = date_string.replace('Confirmed Positive COVID Cases: ','')
+    date_string = date_string.replace(' at 6 PM','')  
+    dateMatch = dateMatcher.match( date_string )
+    my_date_string = dateMatch.group(1)
+    dt = datetime.datetime.strptime(my_date_string, "%B %d, %Y")
+    sortme.append([dt,c])
+
+  sorted_list = sorted(sortme, key=lambda t: t[0])
+
+  return_list = []
+  for item in sorted_list:
+    return_list.insert(0, item[1])
+
+  return return_list
+
+
+cumulative = sort_list_by_date(cumulative)
+confirmed = sort_list_by_date(confirmed)
+
+
+
+
 def make_csv(data, output_filename):
 
     output_array = []
 
+  
     for c in data:
       output = {
         'Title': c['title'],
@@ -97,6 +135,10 @@ make_csv(cumulative, 'csv/confirmed-cases-cumulative.csv')
 
 
 
+
+
+
+
 def make_daily_from_cumulative(data, output_filename):
 
     output_array = []
@@ -109,7 +151,6 @@ def make_daily_from_cumulative(data, output_filename):
     current_total = 0;
     current_students = 0;
     current_staff = 0;
-
 
     for i in range(len(data)):
 
@@ -132,7 +173,7 @@ def make_daily_from_cumulative(data, output_filename):
          current_students = previous_students
          current_staff = previous_staff
     
-      if previous_title is not None and 'October 13, 2022' in previous_title:
+      if previous_title is not None and 'October 03, 2022' in previous_title:
          current_total = int(confirmed[i - 1]['rows'][0][0])
          current_students = int(confirmed[i - 1]['rows'][0][1])
          current_staff = int(confirmed[i - 1]['rows'][0][2])
