@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: October 31, 2022 as of 6 PM",
+    "title": "Reported COVID Cases: November 01, 2022 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "911",
-        "528",
-        "383"
+        "748",
+        "455",
+        "293"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 08, 2022 - October 31, 2022 at 6 PM",
+    "title": "Cumulative Reported Cases: September 08, 2022 - November 01, 2022 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "22,820",
-        "14,815",
-        "8,005"
+        "23,570",
+        "15,270",
+        "8,300"
       ]
     ]
   }
