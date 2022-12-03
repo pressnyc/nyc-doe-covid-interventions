@@ -16,9 +16,14 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: setup python
+    - name: setup libxml pre-reqs
       run: |
         sudo apt-get install -y libxml2-dev libxslt1-dev
+
+    - name: setup python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
 
     - name: install python packages
       run: |
