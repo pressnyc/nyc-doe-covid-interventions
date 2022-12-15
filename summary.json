@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: December 13, 2022 as of 6 PM",
+    "title": "Reported COVID Cases: December 14, 2022 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "1,304",
-        "774",
-        "530"
+        "1,086",
+        "692",
+        "394"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 08, 2022 - December 13, 2022 at 6 PM",
+    "title": "Cumulative Reported Cases: September 08, 2022 - December 14, 2022 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "49,569",
-        "30,729",
-        "18,840"
+        "50,655",
+        "31,421",
+        "19,234"
       ]
     ]
   }
