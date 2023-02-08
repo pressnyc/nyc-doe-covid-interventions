@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: February 06, 2023 as of 6 PM",
+    "title": "Reported COVID Cases: February 07, 2023 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "630",
-        "339",
-        "291"
+        "351",
+        "217",
+        "134"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 08, 2022 - February 06, 2023 at 6 PM",
+    "title": "Cumulative Reported Cases: September 08, 2022 - February 07, 2023 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "75,753",
-        "46,328",
-        "29,425"
+        "76,104",
+        "46,545",
+        "29,559"
       ]
     ]
   }
