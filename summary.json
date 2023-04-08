@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: April 04, 2023 as of 6 PM",
+    "title": "Reported COVID Cases: April 07, 2023 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "57",
-        "35",
-        "22"
+        "5",
+        "2",
+        "3"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 08, 2022 - April 04, 2023 at 6 PM",
+    "title": "Cumulative Reported Cases: September 08, 2022 - April 07, 2023 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "81,457",
-        "49,238",
-        "32,219"
+        "81,503",
+        "49,256",
+        "32,247"
       ]
     ]
   }
