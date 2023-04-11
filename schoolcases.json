@@ -1,32 +1,80 @@
 [
   {
     "TotalCases": 1,
-    "StudentCases": 1,
-    "EmployeeCases": 0,
-    "nycsr_locationsiteid": "a183ff9e-30f4-ea11-b882-24ee9a37d45c",
-    "nycsr_sitename": "P.S. 253 - K253 - K253 - 21K253 - 601 Ocean View Avenue",
-    "nycsr_building.nycsr_buildingid": "a283ff9e-30f4-ea11-b882-24ee9a37d45c",
-    "nycsr_building.nycsr_longitude": -73961962,
-    "nycsr_building.nycsr_latitude": 40580237,
-    "nycsr_building.nycsr_buildingname": "P.S. 253 - BROOKLYN",
-    "nycsr_building.nycsr_address": "601 Ocean View Avenue"
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "b479df48-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "Success Academy Charter School - Bed Stuy 2 - K125 - K059 - 84K125 - 211 THROOP AVENUE",
+    "nycsr_building.nycsr_buildingid": "b579df48-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73943279,
+    "nycsr_building.nycsr_latitude": 40697619,
+    "nycsr_building.nycsr_buildingname": "P.S. 59 - BROOKLYN",
+    "nycsr_building.nycsr_address": "211 THROOP AVENUE"
   },
   {
-    "TotalCases": 2,
+    "TotalCases": 1,
     "StudentCases": 1,
-    "EmployeeCases": 1,
-    "nycsr_locationsiteid": "cd689025-33f4-ea11-b882-24ee9a37d45c",
-    "nycsr_sitename": "Success Academy Charter School - Bronx 4 - X464 - X131 - 84X464 - 885 Bolton Avenue",
-    "nycsr_building.nycsr_buildingid": "c8689025-33f4-ea11-b882-24ee9a37d45c",
-    "nycsr_building.nycsr_longitude": -73859998,
-    "nycsr_building.nycsr_latitude": 40822925,
-    "nycsr_building.nycsr_buildingname": "I.S. 131 - BRONX",
-    "nycsr_building.nycsr_address": "885 Bolton Avenue"
+    "EmployeeCases": 0,
+    "nycsr_locationsiteid": "6934aa92-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "Success Academy Charter School - Washington Heights - M265 - M387 - 84M265 - 701 Fort Washington Avenue",
+    "nycsr_building.nycsr_buildingid": "6a34aa92-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73935231,
+    "nycsr_building.nycsr_latitude": 40857650,
+    "nycsr_building.nycsr_buildingname": "Success Academy - Washington Heights",
+    "nycsr_building.nycsr_address": "701 Fort Washington Avenue"
   },
   {
     "TotalCases": 1,
     "StudentCases": 0,
     "EmployeeCases": 1,
+    "nycsr_locationsiteid": "778d8486-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "KIPP Infinity Charter School - M336 - M195 - 84M336 - 625 WEST 133 STREET",
+    "nycsr_building.nycsr_buildingid": "758d8486-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73956814,
+    "nycsr_building.nycsr_latitude": 40819793,
+    "nycsr_building.nycsr_buildingname": "TERENCE D. TOLBERT EDUCATION COMPLEX - MANHATTAN",
+    "nycsr_building.nycsr_address": "625 WEST 133 STREET"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "c9c88e4f-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "Harlem Village Academy East Charter School - M335 - M045 - 84M335 - 2351 FIRST AVENUE",
+    "nycsr_building.nycsr_buildingid": "c6c88e4f-31f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73933740,
+    "nycsr_building.nycsr_latitude": 40799265,
+    "nycsr_building.nycsr_buildingname": "I.S. 45 - MANHATTAN",
+    "nycsr_building.nycsr_address": "2351 FIRST AVENUE"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "8a03194f-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "Success Academy Charter School - Bergen Beach - K781 - K078 - 84K781 - 1420 EAST  68 STREET",
+    "nycsr_building.nycsr_buildingid": "8b03194f-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73912914,
+    "nycsr_building.nycsr_latitude": 40620537,
+    "nycsr_building.nycsr_buildingname": "I.S. 78 - BROOKLYN",
+    "nycsr_building.nycsr_address": "1420 EAST  68 STREET"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 0,
+    "EmployeeCases": 1,
+    "nycsr_locationsiteid": "30ebaa73-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_sitename": "Success Academy Charter School - Crown Heights - K741 - K161 - 84K741 - 330 CROWN STREET",
+    "nycsr_building.nycsr_buildingid": "31ebaa73-30f4-ea11-b882-24ee9a37d45c",
+    "nycsr_building.nycsr_longitude": -73949243,
+    "nycsr_building.nycsr_latitude": 40665757,
+    "nycsr_building.nycsr_buildingname": "P.S. 161 - BROOKLYN",
+    "nycsr_building.nycsr_address": "330 CROWN STREET"
+  },
+  {
+    "TotalCases": 1,
+    "StudentCases": 1,
+    "EmployeeCases": 0,
     "nycsr_locationsiteid": "8d7eda5c-ebf6-ea11-b883-24ee9a37d459",
     "nycsr_sitename": "Success Academy Charter School - Harlem 1 - M351 - M088 - 84M351 - 215 WEST 114 STREET",
     "nycsr_building.nycsr_buildingid": "8841e65b-31f4-ea11-b882-24ee9a37d45c",
@@ -34,17 +82,5 @@
     "nycsr_building.nycsr_latitude": 40802610,
     "nycsr_building.nycsr_buildingname": "I.S. 88 - MANHATTAN",
     "nycsr_building.nycsr_address": "215 WEST 114 STREET"
-  },
-  {
-    "TotalCases": 1,
-    "StudentCases": 0,
-    "EmployeeCases": 1,
-    "nycsr_locationsiteid": "f38a0044-33f4-ea11-b882-24ee9a37d45c",
-    "nycsr_sitename": "Success Academy Charter School - Bronx 1 - X493 - X183 - 84X493 - 339 MORRIS AVENUE",
-    "nycsr_building.nycsr_buildingid": "ef8a0044-33f4-ea11-b882-24ee9a37d45c",
-    "nycsr_building.nycsr_longitude": -73925995,
-    "nycsr_building.nycsr_latitude": 40813681,
-    "nycsr_building.nycsr_buildingname": "J.H.S. 203 - BRONX",
-    "nycsr_building.nycsr_address": "339 MORRIS AVENUE"
   }
 ]
