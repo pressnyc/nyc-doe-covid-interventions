@@ -1,6 +1,6 @@
 [
   {
-    "title": "Reported COVID Cases: May 11, 2023 as of 6 PM",
+    "title": "Reported COVID Cases: May 12, 2023 as of 6 PM",
     "header": [
       "Total",
       "Students",
@@ -8,14 +8,14 @@
     ],
     "rows": [
       [
-        "43",
-        "21",
-        "22"
+        "42",
+        "25",
+        "17"
       ]
     ]
   },
   {
-    "title": "Cumulative Reported Cases: September 08, 2022 - May 11, 2023 at 6 PM",
+    "title": "Cumulative Reported Cases: September 08, 2022 - May 12, 2023 at 6 PM",
     "header": [
       "Total",
       "Students",
@@ -23,9 +23,9 @@
     ],
     "rows": [
       [
-        "82,571",
-        "49,640",
-        "32,931"
+        "82,613",
+        "49,665",
+        "32,948"
       ]
     ]
   }
